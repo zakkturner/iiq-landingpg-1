@@ -1,6 +1,9 @@
 *{
     margin: 0;
+    font-family: proxima-nova, sans-serif; 
 }
+
+/* Header */
 .header{
     background: #3c679f;
     height: 195px;
@@ -12,3 +15,14 @@
     width: 436px;
     height: 85px;
 }
+
+.tagline{
+    background: #FEBB12;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #3c679f;
+}
+

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/cfb8bbe.css">
   </head>
 
 <body>
@@ -22,18 +23,24 @@
         const Header = () =>{
             return html `
             <header class="header">
-            
-            <img src="https://www.incidentiq.com/wp-content/uploads/2019/10/logo-overlay.svg" class="logo-img"  alt="logo"/>
-            
+              <img src="https://www.incidentiq.com/wp-content/uploads/2019/10/logo-overlay.svg" class="logo-img"  alt="logo"/>
             </header>
-            
             `
+        }
+        const Tagline = () =>{
+          return html `
+          <section class="tagline">
+            <h3 class="tag-txt">WEBINAR: Thursday, May 6 @ 1pm ET/ 10am PT</h3>
+          </section>
+          `
         }
       
         function App (props) {
-          return html`<${Header} />`
-
+          return html`
           
+          <${Header} />
+          <${Tagline} />
+          `
         }
       
         render(html`<${App} name="World" />`, document.body);
