@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+}
+.header{
+    background: #3c679f;
+    height: 195px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-img{
+    width: 436px;
+    height: 85px;
+}
