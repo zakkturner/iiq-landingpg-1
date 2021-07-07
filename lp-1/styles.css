@@ -26,3 +26,12 @@
     color: #3c679f;
 }
 
+/* Form Section */
+
+.form-section{
+    height: 100%;
+    background: #3c679f;
+    padding: 70px 180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

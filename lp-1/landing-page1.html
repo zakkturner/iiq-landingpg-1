@@ -34,12 +34,29 @@
           </section>
           `
         }
+        const FormSection = () =>{
+          return html`
+          <section class="form-section">
+              <div class="description">
+                
+              </div>
+              <div class="form-container">
+                <form class="form">
+                  <h2 class="form-title">Register Now!</h2>
+                </form>  
+                </div>  
+                        
+            </section>
+          `
+        }
+        
       
         function App (props) {
           return html`
           
           <${Header} />
           <${Tagline} />
+          <${FormSection} />
           `
         }
       
