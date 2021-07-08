@@ -37,19 +37,71 @@
         const FormSection = () =>{
           return html`
           <section class="form-section">
-              <div class="description">
-                
-              </div>
-              <div class="form-container">
-                <form class="form">
-                  <h2 class="form-title">Register Now!</h2>
-                </form>  
-                </div>  
-                        
+            <div class="form-section-container">
+              <${Description} />
+              <${Form} />
+               
+            </div>  
             </section>
           `
         }
         
+        const Description = () =>{
+          return html `
+          <div class="description">
+                <h2 class="desc-title">
+                  Introducing Incident IQ: Modern Support Tools for Today's K-12 Classrooms  
+                </h2>
+                <div class="desc-container">
+                  <div class="speaker-img"></div>
+                  <div class="desc-details">
+                    <div class="speaker-container">
+                      <h5 class="details-title">Featured Speaker</h5>  
+                      <h6 class="speaker-name">Keyton Gibson</h6>
+                      <p class="speaker-position">Account Executive</p>
+                      </div>
+                      <div class="event-container">
+                        <h5 class="details-title">Event Summary</h5>  
+                        <p class="event-summary">In this event, Keyton will give a comprehensive rundown of the powerful features found in the Incident IQ platform.</p>
+                      </div>
+                  </div>  
+                </div>
+              </div>
+          `
+        }
+
+        const Form = () =>{
+          return html `
+          <div class="form-container">
+            <h2 class="form-title">Register Now!</h2>
+            <p class="form-text">All fields Required to Register</p>
+                <form class="form">
+                  <div class="form-group">
+                    <div class="input-container">
+                      <input type="text" name="firstName" 
+                      placeholder="First Name" class="form-input" required/>  
+                    </div>
+                    <div class="input-container">
+                     <input type="text" name="lastName" placeholder="Last Name" class="form-input" required/>
+                    </div>  
+                  </div>
+                  <div class="input-container">
+                  <input type="email" name="email" placeholder="Email" class="form-input" />
+                  </div>
+                  <div class="form-group">
+                    <div class="input-container">
+                      <input type="text" name="district" placeholder="School District" class="form-input" required/>
+                    </div> 
+                    <div class="input-container"> 
+                      <select name="state" placeholder="State" class="form-input" required>
+                        <option value="state"  selected disabled>State</option> 
+                      </select>  
+                    </div>
+                  </div>
+                </form>  
+                </div> 
+          `
+        }
       
         function App (props) {
           return html`
