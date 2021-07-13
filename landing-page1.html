@@ -85,8 +85,10 @@
                      <input type="text" name="lastName" placeholder="Last Name" class="form-input" required/>
                     </div>  
                   </div>
+                  <div class="form-group">
                   <div class="input-container">
                   <input type="email" name="email" placeholder="Email" class="form-input" />
+                  </div>
                   </div>
                   <div class="form-group">
                     <div class="input-container">
@@ -98,17 +100,42 @@
                       </select>  
                     </div>
                   </div>
-                </form>  
+                 <div class="form-group">
+                  <input type="submit" value="REGISTER" class="form-btn"/>
+                  </div>
+                  </form>  
                 </div> 
           `
         }
       
-        function App (props) {
+      const Quote = () =>{
+        return html`
+          <section class="quote-section">
+            <div class="quote"></div>
+            <div class="laptop-img"></div>
+          </section>
+        `
+      }
+      
+      const AppList = () =>{
+        return html`
+          <section class="app-list">
+            <div class="app-list-container">
+              <p class="list-text"><em>Incident IQ works seamlessly with dozens of integrations and apps for a complete support experience</em></p>
+              <div class="list-img"></div>
+            </div>
+          </section>
+        `
+      }
+      
+      function App (props) {
           return html`
           
           <${Header} />
           <${Tagline} />
           <${FormSection} />
+          <${Quote} />
+          <${AppList} />
           `
         }
       
