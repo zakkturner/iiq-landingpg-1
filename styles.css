@@ -1,27 +1,28 @@
-*{
+* {
     margin: 0;
-    font-family: proxima-nova, sans-serif; 
+    font-family: proxima-nova, sans-serif;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
 /* Header */
 
-.header{
+.header {
     background: #3c679f;
     height: 195px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.logo-img{
+
+.logo-img {
     width: 275px;
     height: 200px;
 }
 
-.tagline{
+.tagline {
     background: #FEBB12;
     height: 55px;
     display: flex;
@@ -32,31 +33,40 @@ body{
     text-align: center;
 }
 
-.tag-txt{
+.tag-txt {
     width: 95%;
     margin: 0 auto;
     font-size: 14px;
 }
+
 /* Form Section */
 
-.form-section{
+.form-section {
     height: 100%;
     background: url('https://www.incidentiq.com/wp-content/uploads/2021/07/BlueBackground-Top.jpg') no-repeat center center;
     background-size: cover;
-    padding: 70px 0;
-   
+    /* padding: 70px 0; */
 }
 
-.form-section-container{
+.footer-form {
+    height: 100%;
+    background: url('https://www.incidentiq.com/wp-content/uploads/2021/07/BlueBackground-Top.jpg') no-repeat bottom center;
+    background-size: cover;
+    
+}
+
+.form-section-container {
     display: grid;
     grid-template-columns: 1fr;
     width: 90%;
     margin: 0 auto;
     grid-gap: 50px;
+    padding: 70px 0;
 }
+
 /* Styles for description side of the form */
 
-.desc-title{
+.desc-title {
     color: #FFF;
     font-size: 40px;
     line-height: 1;
@@ -64,38 +74,38 @@ body{
     text-align: center;
 }
 
-.desc-container{
+.desc-container {
     display: grid;
     grid-template-columns: 30% 1fr;
     grid-gap: 34px;
 }
-.speaker-img{
+
+.speaker-img {
     width: 128px;
     height: 128px;
     border-radius: 50%;
     background: url('https://www.incidentiq.com/wp-content/uploads/2021/01/cory-5f6e55fcc43a79b7e85367ee2fa1b5b1.jpg') center center no-repeat;
     background-size: cover;
-
 }
 
-.details-title{
+.details-title {
     color: #FEBB12;
     font-size: 16px;
     font-weight: 300;
 }
 
-.speaker-container{
+.speaker-container {
     margin-bottom: 28px;
 }
 
-.speaker-name, .event-summary{
+.speaker-name, .event-summary {
     color: #fff;
     font-size: 12px;
     font-weight: 300;
     line-height: 1.2;
 }
 
-.speaker-position{
+.speaker-position {
     font-size: 12px;
     color: #fff;
     font-weight: 300;
@@ -103,51 +113,56 @@ body{
 
 /* Form styles */
 
-.form-title{
+.form-title {
     margin: 0 5%;
     font-size: 32px;
     line-height: 1;
     color: #FEBB12;
     text-transform: uppercase;
 }
-.form-text{
+
+.form-text {
     margin: 0 5%;
     color: #fff;
     font-size: 12px;
 }
 
-.form-group{
+/*.form-group{
     /* display: grid;
-    grid-template-columns: 1fr; */
+    grid-template-columns: 1fr; 
     
-}
+}*/
 
-.input-container{
+.input-container {
     background: #fff;
     width: 90%;
     height: 28px;
     border-radius: 50px;
-padding: 5px 5px;
-margin: 5px auto;
-box-shadow: 7px 15px 25px -29px rgba(0,0,0,0.69) inset;
--webkit-box-shadow: 7px 15px 25px -29px rgba(0,0,0,0.69) inset;
--moz-box-shadow: 7px 15px 25px -29px rgba(0,0,0,0.69) inset;
-
+    padding: 5px 5px;
+    margin: 5px auto;
+    box-shadow: 7px 15px 25px -29px rgba(0, 0, 0, 0.69) inset;
+    -webkit-box-shadow: 7px 15px 25px -29px rgba(0, 0, 0, 0.69) inset;
+    -moz-box-shadow: 7px 15px 25px -29px rgba(0, 0, 0, 0.69) inset;
 }
-.form-input{
+
+.form-input {
     width: 100%;
     height: 100%;
     margin-bottom: 10px;
     /* padding: 15px 20px; */
     border-radius: 50px;
     border: none;
+    
+}
+select {
+    color: #767676 !important;
 }
 
-.form-input:focus{
+.form-input:focus {
     outline: none;
 }
 
-.form-btn{
+.form-btn {
     width: 100%;
     height: 40px;
     /* background: transparent; */
@@ -162,487 +177,936 @@ box-shadow: 7px 15px 25px -29px rgba(0,0,0,0.69) inset;
     font-weight: 700;
 }
 
+/* Quote Section */
 
-  /* Quote Section */
-
-  .quote-section{
+.quote-section {
     background: #fff;
     width: 100%;
     height: 100%;
     display: flex;
-    
     position: relative;
-    
 }
 
-.quote{
+.quote {
     width: 65%;
-height: 300px;
+    height: 10em;
     background: url('https://www.incidentiq.com/wp-content/uploads/2021/07/Quote-5.png') no-repeat center center;
     background-size: contain;
     justify-self: flex-end;
 }
 
-.laptop-img{
-  width: 800px;
-  height: 800px;
-  background: url('https://www.incidentiq.com/wp-content/uploads/2021/07/Devices-Laptop-Mobile.png') no-repeat center center;
-  background-size: contain;
-  position: absolute;
-  top: -80%;
-  right: 11em;
+.laptop-img {
+    width: 400px;
+    height: 400px;
+    background: url('https://www.incidentiq.com/wp-content/uploads/2021/07/Devices-Laptop-Mobile.png') no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    top: -72%;
+    right: -16em;
 }
-
 
 /* App List Styles */
-.app-list{
+
+.app-list {
     width: 100%;
-    height: 300px;
+    height: 100%;
     background: #fec311;
     padding: 70px 0;
+    display: flex;
+    align-items: center;
 }
-.app-list-container{
+
+.app-list-container {
     width: 90%;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+
+.list-text {
+    font-size: 9px;
+    color: #3c679f;
+    font-weight: 600;
+}
+
+.list-img {
+    width: 72%;
+    height: 100px;
+    background: url('https://www.incidentiq.com/wp-content/uploads/2021/07/AI-icons.png') no-repeat center center;
+    background-size: auto;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+}
+
+/* Features Section */
+
+.features-section {
+    background: #fff;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.features-container {
+    width: 65%;
+    height: 100%;
+    justify-self: flex-end;
+}
+
+.features-title {
+    font-size: 15px;
+    color: #3c679f;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.features-item {
+    font-size: 12px;
+    color: #3c679f;
+    margin-bottom: 5px;
+}
+.features-list{
+    padding-left: 1em;
+}
+
+.desktop-img {
+    width: 145px;
+    height: 145px;
+    background: url('https://www.incidentiq.com/wp-content/uploads/2021/07/Devices-Desktop.png') no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    /*top: -72%;
+    */
+    bottom: -3%;
+    left: 0;
+}
+
+.register-title{
+    color: #FEBB12;
+    line-height: 1;
+}
+
+.date{
+    color: #fff;
 }
 
 
-/*******
+/* Copyright Section */
 
-Tablet Styles 
+.copy-section{
+    background: #fff;
 
-*******/
+}
+.copy-container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.footer-logo{
+    background: url('https://www.incidentiq.com/wp-content/uploads/2019/02/iiQ-logo-lg.png') no-repeat center center;
+    background-size: contain;
+    
+    padding-right: 10px;
+
+}
+.copy-txt-container{
+    border-left: 3px solid #FEBB12;
+    padding-left: 15px;
+    align-self: center;
+}
+.copy-txt{
+    font-size: 10px;
+    margin-bottom: 10px;
+    color: #929395;
+}
+
+.trdmrk{
+    color: #FEBB12;
+    text-decoration: none;
+}
+/***********************************************************************
+
+Tablet styles 
+
+***********************************************************************/
+
 @media screen and (min-width: 768px) {
     /* Header */
+    .header {
+        background: #3c679f;
+        height: 195px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-img {
+        width: 436px;
+        height: 85px;
+    }
+    .tagline {
+        background: #FEBB12;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: #3c679f;
+    }
+    /* Form Section */
+    .form-section {
+        height: 100%;
+        /* padding: 70px 0; */
+    }
+    .form-section-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin: 0 auto;
+        grid-gap: 55px;
+    }
+    /* Styles for description side of the form */
+    .desc-title {
+        color: #FFF;
+        font-size: 48px;
+        line-height: 1;
+        margin-bottom: 55px;
+        text-align: left;
+    }
+    .desc-container {
+        display: grid;
+        grid-template-columns: 30% 1fr;
+        grid-gap: 34px;
+    }
+    .speaker-img {
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+        background: url('https://www.incidentiq.com/wp-content/uploads/2021/01/cory-5f6e55fcc43a79b7e85367ee2fa1b5b1.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    .details-title {
+        color: #FEBB12;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .speaker-container {
+        margin-bottom: 28px;
+    }
+    .speaker-name, .event-summary {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    .speaker-position {
+        font-size: 12px;
+        color: #fff;
+        font-weight: 300;
+    }
+    /* Form styles */
+    .form-title {
+        font-size: 48px;
+        line-height: 1;
+        color: #FEBB12;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .form-text {
+        margin: 0;
+    }
+    .form-group {
+        /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px; */
+        display: flex;
+    }
+    .input-container {
+        background: #fff;
+        width: 100%;
+        height: 28px;
+        border-radius: 50px;
+        padding: 5px 5px;
+        margin: 5px auto;
+        box-shadow: 7px 15px 25px -29px rgba(0, 0, 0, 0.69) inset;
+        -webkit-box-shadow: 7px 15px 25px -29px rgba(0, 0, 0, 0.69) inset;
+        -moz-box-shadow: 7px 15px 25px -29px rgba(0, 0, 0, 0.69) inset;
+    }
+    .form-input {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+        /* padding: 15px 20px; */
+        border-radius: 50px;
+        border: none;
+    }
+    .form-input:focus {
+        outline: none;
+    }
+    /* Quote Section */
+    .quote-section {
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+    }
+    .quote {
+        width: 65%;
+        height: 13em;
+        background: url('https://www.incidentiq.com/wp-content/uploads/2021/07/Quote-5.png') no-repeat center center;
+        background-size: contain;
+        justify-self: flex-end;
+    }
+    .laptop-img {
+        width: 600px;
+        height: 400px;
+        background: url('https://www.incidentiq.com/wp-content/uploads/2021/07/Devices-Laptop-Mobile.png') no-repeat center center;
+        background-size: contain;
+        position: absolute;
+        top: -42%;
+        right: -18em;
+    }
+    /* App List Styles */
+    .app-list {
+        width: 100%;
+        height: 100%;
+        background: #fec311;
+        padding: 50px 0;
+    }
+    .app-list-container {
+        width: 85%;
+        height: 185px;
+    }
+    .list-text {
+        font-size: 12px;
+        width: 70%;
+        margin: 2em 2em;
+    }
+    .list-img {
+        width: 90%;
+        height: 100%;
+    }
+    /* Features Section */
 
-.header{
-    background: #3c679f;
-    height: 195px;
+.features-section {
+    background: #fff;
+    width: 90%;
+    height: 13em;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo-img{
-    width: 436px;
-    height: 85px;
+    justify-content: flex-end;
+    position: relative;
+    margin: 0 auto;
+    padding: 15px 0;
 }
 
-.tagline{
-    background: #FEBB12;
-    height: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
+.features-container {
+    width: 55%;
+    height: 100%;
+    justify-self: flex-end;
+}
+
+.features-title {
+    font-size: 28px;
     color: #3c679f;
 }
 
-/* Form Section */
-
-.form-section{
-    height: 100%;
-    
-    padding: 70px 0;
-   
+.features-item {
+    font-size: 14px;
+    color: #3c679f;
+    margin-bottom: 5px;
 }
 
-.form-section-container{
-    display: grid;
-    grid-template-columns: 1fr;
+.desktop-img {
+    width: 300px;
+    height: 300px;
+    
+    bottom: -3%;
+    left: 0;
+}
+
+/* Copyright Section */
+
+
+.copy-container{
     width: 80%;
     margin: 0 auto;
-    grid-gap: 55px;
-}
-/* Styles for description side of the form */
-
-.desc-title{
-    color: #FFF;
-    font-size: 48px;
-    line-height: 1;
-    margin-bottom: 55px;
-    text-align: left;
-}
-
-.desc-container{
+    padding: 30px 0;
     display: grid;
-    grid-template-columns: 30% 1fr;
-    grid-gap: 34px;
-}
-.speaker-img{
-    width: 128px;
-    height: 128px;
-    border-radius: 50%;
-    background: url('https://www.incidentiq.com/wp-content/uploads/2021/01/cory-5f6e55fcc43a79b7e85367ee2fa1b5b1.jpg') center center no-repeat;
-    background-size: cover;
-
+    grid-gap: 20px;
+    grid-template-columns: 40% 1fr;
 }
 
-.details-title{
-    color: #FEBB12;
-    font-size: 20px;
-    font-weight: 300;
-}
 
-.speaker-container{
-    margin-bottom: 28px;
+.footer-logo{
+    
+    width: 200px;
+    height: 100px;
+    padding-right: 10px;
+    justify-self: center;
 }
-
-.speaker-name, .event-summary{
-    color: #fff;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.2;
+.copy-txt-container{
+    
+    padding-left: 15px;
 }
-
-.speaker-position{
+.copy-txt{
     font-size: 12px;
-    color: #fff;
-    font-weight: 300;
+    margin-bottom: 5px;
+    align-self: center;
 }
 
-/* Form styles */
-
-.form-title{
-    font-size: 48px;
-    line-height: 1;
-    color: #FEBB12;
-    text-transform: uppercase;
-    margin: 0;
-}
-.form-text{
-    margin: 0;
 }
 
-.form-group{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 15px; */
-display: flex;
-}
-
-.input-container{
-    background: #fff;
-    width: 100%;
-    height: 28px;
-    border-radius: 50px;
-padding: 5px 5px;
-margin: 5px auto;
-box-shadow: 7px 15px 25px -29px rgba(0,0,0,0.69) inset;
--webkit-box-shadow: 7px 15px 25px -29px rgba(0,0,0,0.69) inset;
--moz-box-shadow: 7px 15px 25px -29px rgba(0,0,0,0.69) inset;
-
-}
-.form-input{
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-    /* padding: 15px 20px; */
-    border-radius: 50px;
-    border: none;
-}
-
-.form-input:focus{
-    outline: none;
-}
-  }
-
-
-/*******
+/***********************************************************************
 
 Desktop/Large Tablet styles 
 
-*******/
+***********************************************************************/
+
 @media screen and (min-width: 1024px) {
     /* Header */
-
-.header{
-    background: #3c679f;
-    height: 195px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo-img{
-    width: 436px;
-    height: 85px;
-}
-
-.tagline{
-    background: #FEBB12;
-    height: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    color: #3c679f;
-}
-.tag-txt{
-    font-size: 20px;
-}
-/* Form Section */
-
-.form-section{
-    width: 100%;
-    height: 100%;
-    
-    padding: 70px 0;
-   
-}
-
-.form-section-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 80%;
-    margin: 0 auto;
-    grid-gap: 50px;
-    /* grid-gap: 125px; */
-}
-/* Styles for description side of the form */
-
-.desc-title{
-    color: #FFF;
-    font-size: 48px;
-    line-height: 1;
-    margin-bottom: 55px;
-}
-
-.desc-container{
-    display: grid;
-    grid-template-columns: 30% 1fr;
-    grid-gap: 34px;
-}
-.speaker-img{
-    width: 128px;
-    height: 128px;
-    border-radius: 50%;
-    background: url('https://www.incidentiq.com/wp-content/uploads/2021/01/cory-5f6e55fcc43a79b7e85367ee2fa1b5b1.jpg') center center no-repeat;
-    background-size: cover;
-
-}
-
-.details-title{
-    color: #FEBB12;
-    font-size: 20px;
-    font-weight: 300;
-}
-
-.speaker-container{
-    margin-bottom: 28px;
-}
-
-.speaker-name, .event-summary{
-    color: #fff;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.2;
-}
-
-.speaker-position{
-    font-size: 12px;
-    color: #fff;
-    font-weight: 300;
-}
-
-/* Form styles */
-
-.form-title{
-    font-size: 48px;
-    line-height: 1;
-    color: #FEBB12;
-    text-transform: uppercase;
-}
-
-.form-group{
+    .header {
+        background: #3c679f;
+        height: 195px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-img {
+        width: 436px;
+        height: 85px;
+    }
+    .tagline {
+        background: #FEBB12;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: #3c679f;
+    }
+    .tag-txt {
+        font-size: 20px;
+    }
+    /* Form Section */
+    .form-section {
+        width: 100%;
+        height: 100%;
+        /* padding: 70px 0; */
+    }
+    .form-section-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        margin: 0 auto;
+        grid-gap: 50px;
+        /* grid-gap: 125px; */
+    }
+    /* Styles for description side of the form */
+    .desc-title {
+        color: #FFF;
+        font-size: 48px;
+        line-height: 1;
+        margin-bottom: 55px;
+    }
+    .desc-container {
+        display: grid;
+        grid-template-columns: 30% 1fr;
+        grid-gap: 34px;
+    }
+    .speaker-img {
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+        background: url('https://www.incidentiq.com/wp-content/uploads/2021/01/cory-5f6e55fcc43a79b7e85367ee2fa1b5b1.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    .details-title {
+        color: #FEBB12;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .speaker-container {
+        margin-bottom: 28px;
+    }
+    .speaker-name, .event-summary {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    .speaker-position {
+        font-size: 12px;
+        color: #fff;
+        font-weight: 300;
+    }
+    /* Form styles */
+    .form-title {
+        font-size: 48px;
+        line-height: 1;
+        color: #FEBB12;
+        text-transform: uppercase;
+    }
+    /* .form-group{ */
     /* display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 45px; */
-}
+    /* } */
+    .input-container {
+        background: #fff;
+        width: 100%;
+        height: 28px;
+        border-radius: 50px;
+        padding: 5px 10px;
+        margin: 5px;
+        box-shadow: 7px 15px 25px -29px rgba(0, 0, 0, 0.69) inset;
+        -webkit-box-shadow: 7px 15px 25px -29px rgba(0, 0, 0, 0.69) inset;
+        -moz-box-shadow: 7px 15px 25px -29px rgba(0, 0, 0, 0.69) inset;
+    }
+    .form-input {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+        border-radius: 50px;
+        border: none;
+    }
+    .form-input:focus {
+        outline: none;
+    }
 
-.input-container{
+     /* Quote Section */
+     .quote-section {
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+    }
+    .quote {
+        width: 65%;
+        height: 15em;
+        
+    }
+    .laptop-img {
+        width: 700px;
+        height: 400px;
+        
+        top: -42%;
+        right: -14em;
+    }
+
+    /* App List Styles */
+    .app-list {
+        width: 100%;
+        height: 100%;
+        background: #fec311;
+        padding: 70px 0;
+    }
+    .app-list-container {
+        width: 80%;
+        height: 185px;
+    }
+    .list-text {
+        font-size: 15px;
+        width: 58%;
+        margin: 0em 4em;
+    }
+    .list-img {
+        width: 90%;
+        height: 100%;
+    }
+       /* Features Section */
+
+.features-section {
     background: #fff;
-    width: 100%;
-    height: 28px;
-    border-radius: 50px;
-padding: 5px 10px;
-margin: 5px;
-box-shadow: 7px 15px 25px -29px rgba(0,0,0,0.69) inset;
--webkit-box-shadow: 7px 15px 25px -29px rgba(0,0,0,0.69) inset;
--moz-box-shadow: 7px 15px 25px -29px rgba(0,0,0,0.69) inset;
-
-}
-.form-input{
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-    /* padding: 15px 20px; */
-    border-radius: 50px;
-    border: none;
-}
-
-.form-input:focus{
-    outline: none;
-}
-  }
-/*******
-
-Desktop styles 
-
-*******/
-@media screen and (min-width: 1280px) {
-    /* Header */
-
-.header{
-    background: #3c679f;
-    height: 195px;
+    width: 75%;
+    height: 15em;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo-img{
-    width: 436px;
-    height: 85px;
-}
-
-.tagline{
-    background: #FEBB12;
-    height: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    color: #3c679f;
-}
-
-/* Form Section */
-
-.form-section{
-    height: 100%;
-   
-    padding: 70px 0;
-   
-}
-
-.form-section-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 70%;
-    margin: 0 auto;
-    grid-gap: 10px;
-    /* grid-gap: 125px; */
-}
-/* Styles for description side of the form */
-
-.desc-title{
-    color: #FFF;
-    font-size: 48px;
-    line-height: 1;
-    margin-bottom: 55px;
-}
-
-.desc-container{
-    display: grid;
-    grid-template-columns: 30% 1fr;
-    grid-gap: 34px;
-}
-.speaker-img{
-    width: 128px;
-    height: 128px;
-    border-radius: 50%;
-    background: url('https://www.incidentiq.com/wp-content/uploads/2021/01/cory-5f6e55fcc43a79b7e85367ee2fa1b5b1.jpg') center center no-repeat;
-    background-size: cover;
-
-}
-
-.details-title{
-    color: #FEBB12;
-    font-size: 20px;
-    font-weight: 300;
-}
-
-.speaker-container{
-    margin-bottom: 28px;
-}
-
-.speaker-name, .event-summary{
-    color: #fff;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.2;
-}
-
-.speaker-position{
-    font-size: 12px;
-    color: #fff;
-    font-weight: 300;
-}
-
-/* Form styles */
-
-.form-title{
-    font-size: 48px;
-    line-height: 1;
-    color: #FEBB12;
-    text-transform: uppercase;
-}
-
-.form-group{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 45px; */
-}
-
-.input-container{
-    background: #fff;
-    width: 100%;
-    height: 28px;
-    border-radius: 50px;
-padding: 5px 10px;
-margin: 5px;
-box-shadow: 7px 15px 25px -29px rgba(0,0,0,0.69) inset;
--webkit-box-shadow: 7px 15px 25px -29px rgba(0,0,0,0.69) inset;
--moz-box-shadow: 7px 15px 25px -29px rgba(0,0,0,0.69) inset;
-
-}
-.form-input{
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-    /* padding: 15px 20px; */
-    border-radius: 50px;
-    border: none;
-}
-
-.form-input:focus{
-    outline: none;
-}
-
-/* Quote Section */
-.quote-section{
-    background: #fff;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    
+    justify-content: flex-end;
     position: relative;
-    
+    margin: 0 auto;
+    padding: 30px 0;
 }
 
-.quote{
-    width: 65%;
-height: 300px;
-    background: url('https://www.incidentiq.com/wp-content/uploads/2021/07/Quote-5.png') no-repeat center center;
-    background-size: contain;
+.features-container {
+    width: 50%;
+    height: 100%;
     justify-self: flex-end;
 }
 
-.laptop-img{
-  width: 800px;
-  height: 800px;
-  background: url('https://www.incidentiq.com/wp-content/uploads/2021/07/Devices-Laptop-Mobile.png') no-repeat center center;
-  background-size: contain;
-  position: absolute;
-  top: -80%;
-  right: 11em;
+.features-title {
+    font-size: 30px;
+    color: #3c679f;
 }
-  }
 
+.features-item {
+    font-size: 14px;
+   
+}
+
+.desktop-img {
+    width: 350px;
+    height: 350px;
+
+    bottom: -3%;
+    left: 0;
+}
+/* Copyright Section */
+
+
+.copy-container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 40% 1fr;
+}
+
+
+.footer-logo{
+    
+    width: 200px;
+    height: 100px;
+    padding-right: 10px;
+    justify-self: flex-end;
+}
+.copy-txt-container{
+    
+    padding-left: 15px;
+}
+.copy-txt{
+    font-size: 12px;
+    margin-bottom: 5px;
+    align-self: center;
+}
+}
+
+/***********************************************************************
+
+
+Desktop styles 
+
+***********************************************************************/
+
+@media screen and (min-width: 1280px) {
+    /* Header */
+    .header {
+        background: #3c679f;
+        height: 195px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-img {
+        width: 436px;
+        height: 85px;
+    }
+    .tagline {
+        background: #FEBB12;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: #3c679f;
+    }
+    /* Form Section */
+    .form-section {
+        height: 100%;
+        /* padding: 70px 0; */
+    }
+    .form-section-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 70%;
+        margin: 0 auto;
+        grid-gap: 10px;
+        /* grid-gap: 125px; */
+    }
+    /* Styles for description side of the form */
+    .desc-title {
+        color: #FFF;
+        font-size: 48px;
+        line-height: 1;
+        margin-bottom: 55px;
+    }
+    .desc-container {
+        display: grid;
+        grid-template-columns: 30% 1fr;
+        grid-gap: 34px;
+    }
+    .speaker-img {
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+        background: url('https://www.incidentiq.com/wp-content/uploads/2021/01/cory-5f6e55fcc43a79b7e85367ee2fa1b5b1.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    .details-title {
+        color: #FEBB12;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .speaker-container {
+        margin-bottom: 28px;
+    }
+    .speaker-name, .event-summary {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    .speaker-position {
+        font-size: 12px;
+        color: #fff;
+        font-weight: 300;
+    }
+    /* Form styles */
+    .form-title {
+        font-size: 48px;
+        line-height: 1;
+        color: #FEBB12;
+        text-transform: uppercase;
+    }
+    /* .form-group{ */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 45px; */
+    /* } */
+    .input-container {
+        background: #fff;
+        width: 100%;
+        height: 28px;
+        border-radius: 50px;
+        padding: 5px 10px;
+        margin: 5px;
+        box-shadow: 7px 15px 25px -29px rgba(0, 0, 0, 0.69) inset;
+        -webkit-box-shadow: 7px 15px 25px -29px rgba(0, 0, 0, 0.69) inset;
+        -moz-box-shadow: 7px 15px 25px -29px rgba(0, 0, 0, 0.69) inset;
+    }
+    .form-input {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+        /* padding: 15px 20px; */
+        border-radius: 50px;
+        border: none;
+    }
+    .form-input:focus {
+        outline: none;
+    }
+    /* Quote Section */
+    .quote-section {
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+    }
+    .quote {
+        width: 65%;
+        height: 18em;
+        
+        justify-self: flex-end;
+    }
+    .laptop-img {
+        width: 800px;
+        height: 500px;
+        top: -6em;
+        right: -14em;
+    }
+    /* App List Styles */
+    .app-list {
+        width: 100%;
+        height: 300px;
+    }
+    .app-list-container {
+        width: 90%;
+        height: 385px;
+    }
+    .list-text {
+        font-size: 20px;
+        width: 55%;
+        margin: 4em 7em;
+    }
+    .list-img {
+        width: 85%;
+        height: 100%;
+    }
+           /* Features Section */
+
+.features-section {
+    background: #fff;
+    width: 70%;
+    height: 18em;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.features-container {
+    
+    height: 100%;
+    justify-self: flex-end;
+}
+
+.features-title {
+    font-size: 32px;
+    color: #3c679f;
+    line-height: 1;
+}
+
+.features-item {
+    font-size: 20px;
+   
+}
+
+.desktop-img {
+    width: 400px;
+    height: 400px;
+
+    bottom: -3%;
+    left: 0;
+}
+
+
+}
+
+
+
+@media screen and (min-width: 1440px) {
+    .quote-section {
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+    }
+    .quote {
+        width: 65%;
+        height: 25em;
+        
+        justify-self: flex-end;
+    }
+    .laptop-img {
+        width: 900px;
+        height: 900px;
+        top: -14em;
+        right: -20em;
+    }
+
+    /* App List Styles */
+    .app-list {
+        width: 100%;
+        height: 300px;
+    }
+    .app-list-container {
+        width: 90%;
+        height: 385px;
+    }
+    .list-text {
+        font-size: 20px;
+        width: 50%;
+        margin: 4em 7em;
+    }
+    .list-img {
+        width: 90%;
+        height: 100%;
+    }
+
+
+}
+
+@media screen and (min-width: 1600px) {
+    .quote-section {
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+    }
+    .quote {
+        width: 65%;
+        height: 25em;
+        
+        justify-self: flex-end;
+    }
+    .laptop-img {
+        width: 900px;
+        height: 900px;
+        top: -14em;
+        right: -12em;
+    }
+      /* App List Styles */
+      .app-list {
+        width: 100%;
+        height: 300px;
+        padding: 100px 0;
+    }
+    .app-list-container {
+        width: 90%;
+        height: 385px;
+    }
+    .list-text {
+        font-size: 20px;
+        width: 50%;
+        margin: 4em 12em;
+    }
+    .list-img {
+        width: 85%;
+        height: 100%;
+    }
+
+        /* Features Section */
+
+.features-section {
+    background: #fff;
+    width: 70%;
+    height: 25em;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.features-container {
+    
+    height: 60%;
+    justify-self: flex-end;
+}
+
+.features-title {
+    font-size: 48px;
+    color: #3c679f;
+    line-height: 1;
+    margin-bottom: .75em;
+}
+
+.features-item {
+ font-size: 24px;
+   
+}
+
+.desktop-img {
+    width: 500px;
+    height: 500px;
+
+    bottom: -3%;
+    left: 0;
+}
+
+}
