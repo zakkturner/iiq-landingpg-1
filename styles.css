@@ -1167,7 +1167,7 @@ Desktop styles
         width: 900px;
         height: 900px;
         top: -14em;
-        right: -16em;
+        right: -26em;
     }
       /* App List Styles */
       .app-list {
@@ -1186,7 +1186,7 @@ Desktop styles
         line-height: 1;
     }
     .list-img {
-        width: 95%;
+        width: 90%;
         height: 100%;
         background-size: cover;
     }
@@ -1196,7 +1196,7 @@ Desktop styles
 .features-section {
     background: #fff;
     width: 60%;
-    height: 28em;
+    height: 100%;
     display: flex;
     justify-content: flex-end;
     position: relative;
