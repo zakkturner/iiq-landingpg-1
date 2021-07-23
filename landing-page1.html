@@ -24,7 +24,7 @@
         const Header = () =>{
             return html `
             <header class="header">
-              <img src="https://www.incidentiq.com/wp-content/uploads/2019/10/logo-overlay.svg" class="logo-img"  alt="logo"/>
+              <img src="https://www.incidentiq.com/wp-content/uploads/2021/07/IncidentIQ-Logo-White-RGB.png" class="logo-img"  alt="logo"/>
             </header>
             `
         }
@@ -87,8 +87,8 @@
                      <input type="text" name="lastName" placeholder="Last Name" class="form-input" required/>
                     </div>  
                   </div>
-                  <div class="form-group">
-                  <div class="input-container">
+                  <div class="form-group email-group">
+                  <div class="input-container email-container">
                   <input type="email" name="email" placeholder="Email" class="form-input" />
                   </div>
                   </div>
@@ -100,10 +100,11 @@
                       <${StateDropdown} />
                     </div>
                   </div>
-                 <div class="form-group">
+                 <div class="form-group btn-container">
                   <input type="submit" value="REGISTER" class="form-btn"/>
                   </div>
                   </form>  
+                  <p class="legal-txt">By registering, I agree to the <a href="#" class="legal-link">Privacy Statement</a> and <a href="#" class="legal-link">Terms of Service</a></p> 
                 </div> 
           `
         }
@@ -125,8 +126,8 @@
                      <input type="text" name="lastName" placeholder="Last Name" class="form-input" required/>
                     </div>  
                   </div>
-                  <div class="form-group">
-                  <div class="input-container">
+                  <div class="form-group email-group">
+                  <div class="input-container ">
                   <input type="email" name="email" placeholder="Email" class="form-input" />
                   </div>
                   </div>
@@ -138,10 +139,11 @@
                       <${StateDropdown} />
                     </div>
                   </div>
-                 <div class="form-group">
+                 <div class="form-group btn-container">
                   <input type="submit" value="REGISTER" class="form-btn"/>
                   </div>
-                  </form>  
+                  </form> 
+                  <p class="legal-txt">By registering, I agree to the <a href="#" class="legal-link">Privacy Statement</a> and <a href="#" class="legal-link">Terms of Service</a></p> 
                 </div> 
           `
         }
@@ -218,7 +220,7 @@
         return html`
           <section class="app-list">
             <div class="app-list-container">
-              <p class="list-text"><em>Incident IQ works seamlessly with dozens of integrations and apps for a complete support experience</em></p>
+              <p class="list-text"><em>Incident IQ works seamlessly <br/> with dozens of integrations <br/> and apps for a complete <br /> support experience</em></p>
               <div class="list-img"></div>
             </div>
           </section>
@@ -230,12 +232,12 @@
           <section class="features-section">
             <div class="desktop-img"></div>
             <div class="features-container">
-              <h2 class="features-title">Built exclusively with features you won't find anywhere else.</h2> 
+              <h2 class="features-title">Built exclusively for K-12 features you won't find anywhere else.</h2> 
               
               <ul class="features-list">
-                <li class='features-item'>Asset management and help ticketing on the same platform</li>  
-                <li class='features-item'>Advanced deployment tools get devices into student hands quickly</li>  
-                <li class='features-item'>My Classes makes it simple for teachers to submit help requests for students</li>  
+                <li class='features-item'><span>Asset management and help ticketing on the same platform</span></li>  
+                <li class='features-item'><span>Advanced deployment tools get devices into student hands quickly</span></li>  
+                <li class='features-item'><span>My Classes makes it simple for teachers to submit help requests for students</span></li>  
               </ul>
             </div>
           </section>
@@ -245,8 +247,8 @@
       const RegisterText = () =>{
         return html`
           <div class="register-container">
-            <h2 class="register-title">Register now to learn more about Incident IQ at our WEBINAR</h2>
-            <h2 class="date">Thursday, May 6 1pm ET / 10am PT</h2>
+            <h2 class="register-title">Register now to <br />learn more about <br />Incident IQ at <br/> our WEBINAR:</h2>
+            <h2 class="date">Thursday, May 6 <br /> 1pm ET / 10am PT</h2>
           </div>
         `
       }
@@ -254,8 +256,8 @@
       const Footer = () =>{
         // const [showText, setShowText] = useState(false)
           return html`
-          <footer class="form-section">
-            <div class="form-section-container">
+          <footer class="form-section footer-form-bg">
+            <div class="form-section-container ">
               <${RegisterText} />
               <${FooterForm } />
               
@@ -283,7 +285,9 @@ const FooterCopy = () =>{
           return html`
           
           <${Header} />
+          
           <${Tagline} />
+          
           <${FormSection} />
           <${Quote} />
           <${AppList} />
