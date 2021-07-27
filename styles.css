@@ -200,35 +200,42 @@ select {
 }
 .quote-container{
     width: 90%;
-    height: 100%;
+    height: 10em;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;
+    max-width: 337px;
 }
 
 .quote {
     /* width: 65%;
     height: 10em; */
     width: 100%;
-    height: 15em;
+    height: 100%;
+    /* height: 15em; */
     background: url('https://www.incidentiq.com/wp-content/uploads/2021/07/Quote-5.png') no-repeat center center;
     background-size: contain;
     justify-self: flex-end;
 }
 
+    .laptop-container{
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
 .laptop-img {
-    /* width: 400px;
-    height: 400px; */
-    width: 100%;
-    height: 200%;
+
+    width: 225%;
+    height: 170%;
     background: url('https://www.incidentiq.com/wp-content/uploads/2021/07/Devices-Laptop-Mobile.png') no-repeat center center;
     background-size: contain;
     position: absolute;
-    top: -72%;
-    right: -16em;
-    max-height: 744px;
+  
+    max-width: 744px;
     max-height: 416px;
+    top: -3em;
 }
 
 /* App List Styles */
@@ -237,7 +244,8 @@ select {
     width: 100%;
     height: 100%;
     background: #fec311;
-    padding: 20px 0 60px 0;
+    /* padding: 20px 0 60px 0; */
+    padding: 3em 0;
     display: flex;
     align-items: center;
 }
@@ -246,26 +254,34 @@ select {
     width: 90%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 35% 1fr;
     position: relative;
+    height: 82px;
+    max-width: 335px;
 }
 
 .list-text {
-    font-size: 12px;
+    font-size: 8px;
     color: #3c679f;
     font-weight: 600;
     width: 100%;
+    line-height: 1.2;
+
 }
 
+.list-img-container{
+    width: 100%;
+    position: relative
+}
 .list-img {
-    width:100%;
-    height: 100px;
+    width:150%;
+    height: 100%;
+    max-height: 300px;
     background: url('https://www.incidentiq.com/wp-content/uploads/2021/07/AI-icons.png') no-repeat center center;
     background-size: auto;
-    background-size: contain;
+    background-size: cover;
     position: absolute;
-    right: -4em;
-    bottom: -2em;
+    right: 0;
 }
 
 /* Features Section */
@@ -481,19 +497,24 @@ Tablet styles
     }
     .form-group {
        
-        display: grid;
+        display: flex;
         grid-template-columns: 1fr 1fr;
         grid-gap: 1em;
         justify-content: space-between;
+        margin-bottom: .5em;
+        flex-direction: row;
     }
     .email-group{
         display: flex;
-        width: 98%;
+        grid-template-columns: 1fr;
+        width: 100%;
         margin: 0 auto;
+        margin-bottom: .5em;
+        
     }
     .input-container {
         background: #fff;
-        width: 96%;
+        width: 100%;
         height: 28px;
         border-radius: 50px;
         padding: 5px 5px;
@@ -534,48 +555,50 @@ Tablet styles
     }
     .quote-container{
         width: 80%;
-        height: 100%;
+        height: 12em;
         margin: 0 auto;
+        max-width: 615px;
 
     }
 
     .quote {
-        width: 24em;
-        height: 13em;
+        width: 100%;
+        /* height: 15em; */
         background: url('https://www.incidentiq.com/wp-content/uploads/2021/07/Quote-5.png') no-repeat center center;
         background-size: contain;
         justify-self: flex-end;
     }
     .laptop-img {
-        width: 40em;
-        height: 18em;
-       
-        position: absolute;
-        top: -2em;
-        right: -20em;
+        /* width: 40em;
+        height: 18em; */
+       top: -3em;
+        /* position: absolute; */
+        /* top: -2em;
+        right: -20em; */
+        width: 170%;
     }
     /* App List Styles */
     .app-list {
-        width: 100%;
-        height: 100%;
-        background: #fec311;
-        padding: 50px 0;
+       
+        padding: 4em 0;
     }
     .app-list-container {
         width: 80%;
-        height: 185px;
+        height: 155px;
+        max-width: 615px;
     }
     .list-text {
         font-size: 15px;
-        width: 70%;
+       
         /* margin: 2em 2em; */
     }
     .list-img {
-        width: 100%;
+        /* width: 100%;
         height: 10em;
         right: 0;
         bottom: 0;
-        background-size: cover;
+        background-size: cover; */
+        max-width: 600px;
     }
     /* Features Section */
 
@@ -773,39 +796,49 @@ Desktop/Large Tablet styles
         height: 100%;
         display: flex;
         position: relative;
+        /* height: 15em; */
+    }
+
+    .quote-container{
+        height: 15em;
+        max-width: none;
     }
     .quote {
-        width: 65%;
-        height: 15em;
+        /* width: 65%; */
+        height: 100%;
         
     }
     .laptop-img {
-        width: 700px;
+        /* width: 700px;
         height: 400px;
         
         top: -42%;
-        right: -14em;
+        right: -14em; */
+        width: 150%;
+        height: 150%;
     }
 
     /* App List Styles */
-    .app-list {
+    /* .app-list {
         width: 100%;
         height: 100%;
         background: #fec311;
         padding: 70px 0;
-    }
+    } */
     .app-list-container {
         width: 80%;
-        height: 185px;
+        height: 200px;
+        max-width: 800px;
     }
     .list-text {
-        font-size: 15px;
-        width: 58%;
-        margin: 0em 4em;
+        font-size: 20px;
+        /* width: 58%; */
+        
     }
     .list-img {
-        width: 90%;
-        height: 100%;
+        /* width: 90%;
+        height: 100%; */
+        max-width: none;
     }
        /* Features Section */
 
@@ -996,35 +1029,35 @@ Desktop styles
         display: flex;
         position: relative;
     }
-    .quote {
-        width: 65%;
+    .quote-container {
+        width: 70%;
         height: 18em;
-        
-        justify-self: flex-end;
+      
     }
     .laptop-img {
-        width: 800px;
+        /* width: 800px;
         height: 500px;
         top: -6em;
-        right: -14em;
+        right: -14em; */
+        top: -3em;
     }
     /* App List Styles */
     .app-list {
         width: 100%;
-        height: 300px;
+        /* height: 300px; */
     }
     .app-list-container {
         width: 90%;
-        height: 385px;
+        height: 200px;
     }
     .list-text {
         font-size: 20px;
-        width: 55%;
-        margin: 4em 7em;
+        /* width: 55%; */
+        /* margin: 4em 7em; */
     }
     .list-img {
-        width: 85%;
-        height: 100%;
+        /* width: 85%;
+        height: 100%; */
     }
            /* Features Section */
 
@@ -1090,7 +1123,7 @@ Desktop styles
     }
 
     .email-group{
-        margin: 0;
+        /* margin-bottom: 0; */
         width: 100%;
     }
 
@@ -1106,39 +1139,42 @@ Desktop styles
         display: flex;
         position: relative;
     }
+    .quote-container {
+        width: 60%;
+    }
     .quote {
-        width: 30em;
-        height: 25em;
+        
+        /* height: 25em; */
         
         justify-self: flex-end;
     }
     .laptop-img {
-        width: 900px;
+        /* width: 900px;
         height: 900px;
         top: -14em;
-        right: -30em;
+        right: -30em; */
     }
 
     /* App List Styles */
-    .app-list {
+    /* .app-list {
         width: 100%;
         height: 300px;
         padding: 45px 0 20px 0;
-    }
+    } */
     .app-list-container {
         width: 60%;
-        height: 18em;
+        height: 200px;
     }
     .list-text {
-        font-size: 22px;
+        /* font-size: 22px; */
         width: 100%;
         /* margin: 4em 7em; */
         margin: 0;
     }
     .list-img {
-        width: 100%;
+        /* width: 100%;
         height: 100%;
-        background-size: contain;
+        background-size: contain; */
     }
 
     /* Features section */
@@ -1175,37 +1211,39 @@ Desktop styles
         position: relative;
     }
     .quote {
-        width: 35em;
-        height: 25em;
+        
+        /* height: 25em; */
         
         justify-self: flex-end;
     }
     .laptop-img {
-        width: 900px;
+        /* width: 900px;
         height: 900px;
         top: -14em;
-        right: -26em;
+        right: -26em; */
     }
       /* App List Styles */
-      .app-list {
+      /* .app-list {
         width: 100%;
         height: 300px;
         padding: 100px 0;
-    }
+    } */
     .app-list-container {
         width: 60%;
-        height: 385px;
+        height: 300px;
+        /* max-height: 200px; */
+        max-width: none;
     }
     .list-text {
-        font-size: 32px;
+        font-size: 25px;
         width: 100%;
         /* margin: 4em 12em; */
-        line-height: 1;
+        /* line-height: 1.2; */
     }
     .list-img {
-        width: 90%;
+        /* width: 90%;
         height: 100%;
-        background-size: cover;
+        background-size: cover; */
     }
 
         /* Features Section */
@@ -1218,29 +1256,29 @@ Desktop styles
     justify-content: flex-end;
     position: relative;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 4em 0;
 }
 
 .desktop-img {
-    width: 600px;
-    height: 600px;
+    width: 470px;
+    height: 495px;
 }
 
 .features-container {
-    
+    width: 48%;
     height: 60%;
     justify-self: flex-end;
 }
 
 .features-title {
-    font-size: 48px;
+    font-size: 36px;
     color: #3c679f;
     line-height: 1;
     margin-bottom: .75em;
 }
 
 .features-item {
- font-size: 24px;
+ font-size: 18px;
    
 }
 .form-container{
